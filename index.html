@@ -1,8 +1,11 @@
-<html>
+<html ng-app = "myFirstAngApp">
     <head>
     <title>AngularJSSample - 1</title>
+    <script src= "angular.min.js"></script>
+    <script src= "myApp.js"></script>
     </head>
-    <body>
-    <H1>Hello CourseEra</H1>
+    <body ng-controller = "myFirstCtrl as $ctrl">
+        <input name ="view model" ng-model="a">
+    <H1>Hello CourseEra -  {{a}} + {{b}}</H1>
     </body>
 </html>
